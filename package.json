@@ -1,0 +1,29 @@
+{
+  "name": "groweasy-csv-importer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-powered CSV importer that maps arbitrary CSVs into GrowEasy CRM format",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "concurrently -n api,web -c blue,green \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "npm run dev -w @groweasy/api",
+    "dev:web": "npm run dev -w @groweasy/web",
+    "build": "npm run build -w @groweasy/api && npm run build -w @groweasy/web",
+    "build:api": "npm run build -w @groweasy/api",
+    "build:web": "npm run build -w @groweasy/web",
+    "start:api": "npm run start -w @groweasy/api",
+    "test": "npm run test -w @groweasy/api -w @groweasy/web",
+    "test:api": "npm run test -w @groweasy/api",
+    "typecheck": "npm run typecheck -w @groweasy/shared -w @groweasy/api -w @groweasy/web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "typescript": "^5.6.3"
+  }
+}

@@ -1,0 +1,8 @@
+created_time,id,full_name,email,phone_number,city,state,campaign_name,form_name,platform
+2026-05-13T14:20:48+05:30,10521,John Doe,john.doe@example.com,+91 98765 43210,Mumbai,Maharashtra,Meridian Tower - May,lead_form_v2,fb
+2026-05-13T14:25:30+05:30,10522,Sarah Johnson,sarah.johnson@example.com,+919876543211,Bangalore,Karnataka,Eden Park Launch,lead_form_v2,ig
+2026-05-13T14:30:15+05:30,10523,Rajesh Patel,rajesh.patel@example.com,919876543212,New Delhi,Delhi,Sarjapur Plots,lead_form_v2,fb
+2026-05-13T14:35:22+05:30,10524,Priya Singh,priya.singh@example.com,+91 90000 11111,Pune,Maharashtra,Varah Swamy Residency,lead_form_v2,ig
+2026-05-13T14:41:05+05:30,10525,Amit Kumar,,+91 98111 22233,Hyderabad,Telangana,Meridian Tower - May,lead_form_v2,fb
+2026-05-13T14:52:19+05:30,10526,Neha Verma,neha.verma@example.com,,Chennai,Tamil Nadu,Eden Park Launch,lead_form_v2,ig
+2026-05-13T15:02:44+05:30,10527,Anonymous Visitor,,,Kolkata,West Bengal,Sarjapur Plots,lead_form_v2,fb

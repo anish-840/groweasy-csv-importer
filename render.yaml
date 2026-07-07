@@ -1,0 +1,20 @@
+# Render Blueprint for the backend API.
+# In Render: New → Blueprint → pick this repo. Set GEMINI_API_KEY when prompted.
+services:
+  - type: web
+    name: groweasy-api
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build:api
+    startCommand: npm run start:api
+    healthCheckPath: /api/health
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
+      - key: NODE_ENV
+        value: production
+      # Set this to your deployed web origin to lock down CORS.
+      - key: CORS_ORIGIN
+        value: '*'
