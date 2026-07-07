@@ -5,7 +5,10 @@ services:
     name: groweasy-api
     runtime: node
     plan: free
-    buildCommand: npm ci && npm run build:api
+    # --include=dev is required because Render sets NODE_ENV=production, under
+    # which npm would otherwise skip devDependencies (tsup, typescript) and the
+    # build would fail with "tsup: not found".
+    buildCommand: npm ci --include=dev && npm run build:api
     startCommand: npm run start:api
     healthCheckPath: /api/health
     envVars:

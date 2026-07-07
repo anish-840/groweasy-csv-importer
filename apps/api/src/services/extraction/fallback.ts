@@ -24,7 +24,7 @@ const FIELD_SYNONYMS: Partial<Record<CrmField, string[]>> = {
   city: ['city', 'town'],
   state: ['state', 'province', 'region'],
   country: ['countryname', 'country', 'nation'],
-  lead_owner: ['leadowner', 'owner', 'assignedto', 'assignee', 'salesrep', 'salesperson', 'agent', 'handledby', 'accountmanager'],
+  lead_owner: ['leadowner', 'assignedexecutive', 'assignedto', 'assigned', 'owner', 'assignee', 'salesrep', 'salesperson', 'executive', 'agent', 'handledby', 'accountmanager', 'relationshipmanager', 'counsellor', 'counselor', 'advisor'],
   crm_status: ['leadstatus', 'crmstatus', 'status', 'stage', 'disposition', 'leadstage'],
   crm_note: ['crmnote', 'notes', 'note', 'remarks', 'remark', 'comments', 'comment'],
   data_source: ['datasource', 'leadsource', 'utmsource', 'source', 'campaign', 'channel', 'project', 'platform'],
