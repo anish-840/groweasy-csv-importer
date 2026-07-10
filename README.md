@@ -13,9 +13,9 @@ its arbitrary columns into the canonical **GrowEasy CRM** format.
 
 | | |
 |---|---|
-| 🌐 **Live app** | _<add your Vercel URL here after deploying>_ |
-| 🔌 **Live API** | _<add your Render/Railway URL here after deploying>_ |
-| 📦 **Repository** | _<add your GitHub URL here>_ |
+| 🌐 **Live app** | https://groweasy-csv-importer-web-ochre.vercel.app |
+| 🔌 **Live API** | https://groweasy-api-3bb4.onrender.com |
+| 📦 **Repository** | https://github.com/anish-840/groweasy-csv-importer |
 
 ---
 
